@@ -9,7 +9,7 @@ class Driver:
     def nav_browser(self):
 
         self.driver.get("https://www.amazon.com/")
-        self.driver.maximize_window()
+        # self.driver.maximize_window()
 
 
 
