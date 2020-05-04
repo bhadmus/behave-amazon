@@ -65,4 +65,5 @@ def step_impl(context):
 
     """
     driver.validate_page_redirect()
+    driver.tear_down()
     # raise NotImplementedError(u'STEP: Then I should be redirected to the Signup or Login page')
