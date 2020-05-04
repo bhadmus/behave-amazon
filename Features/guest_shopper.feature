@@ -1,8 +1,8 @@
-# Created by sanguine at 2020-05-04
-Feature: #Enter feature name here
-  # Enter feature description here
+# Created by Ademola Bhadmus at 2020-05-04
+Feature: A guest shopper on a shopping site
+  The tests steps involved in simulating a guest user journey on a shopping website
 
-  Scenario: # Enter scenario name here
+  Scenario: Test steps as a guest shopper on amazon.com
     Given I open amazon website
     When I search for an item
     And I select the item
