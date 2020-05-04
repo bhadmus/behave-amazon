@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d3a34280-9883-4da3-90a4-581a8cd26423" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Features/steps/guest_shopper_steps.py" beforeDir="false" afterPath="$PROJECT_DIR$/Features/steps/guest_shopper_steps.py" afterDir="false" />
-    </list>
+    <list default="true" id="d3a34280-9883-4da3-90a4-581a8cd26423" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,8 +91,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Features/steps/guest_shopper_steps.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-124">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+            <state relative-caret-position="-139">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding>
                 <element signature="e#0#20#0" expanded="true" />
               </folding>
@@ -225,7 +223,7 @@
       <updated>1588578108503</updated>
       <workItem from="1588578110222" duration="12192000" />
       <workItem from="1588595696135" duration="2137000" />
-      <workItem from="1588604539122" duration="1343000" />
+      <workItem from="1588604539122" duration="1736000" />
     </task>
     <servers />
   </component>
@@ -262,7 +260,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15672000" />
+    <option name="totallyTimeSpent" value="16065000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="984" extended-state="6" />
@@ -364,8 +362,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Features/steps/guest_shopper_steps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-124">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        <state relative-caret-position="-139">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding>
             <element signature="e#0#20#0" expanded="true" />
           </folding>
