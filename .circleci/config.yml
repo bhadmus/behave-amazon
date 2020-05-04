@@ -1,0 +1,28 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.6.2-stretch-browsers
+#      - image: selenium/standalone-chrome:3.141
+
+    steps:
+      - checkout
+
+      - run:
+          name: Install requests
+          command: |
+            sudo pip install -r requirements.txt
+#            sudo pip install chromedriver
+
+      - run:
+          name: Run Selenium test
+          command: |
+             behave ./Features/guest_shopper.feature
+
+      - store_artifacts:
+          path: ./screenshots
+          destination: screenshots-file
+      - store_artifacts:
+          path: ./log
+          destination: logs-file
