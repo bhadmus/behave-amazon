@@ -18,7 +18,7 @@ jobs:
       - run:
           name: Run Selenium test
           command: |
-             behave ./Features/guest_shopper.feature
+             behave ./Features/guest_shopper.feature --no-capture
 
       - store_artifacts:
           path: ./screenshots
