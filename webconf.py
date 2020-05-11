@@ -4,7 +4,8 @@ from Features.helper import values
 
 class Driver:
     """
-    This class can and will be modified soon to allow different web driver options like Firefox, Safari, or Edge
+    This class can and will be modified soon to allow different web driver
+    options like Firefox, Safari, or Edge
     """
 
     def __init__(self):

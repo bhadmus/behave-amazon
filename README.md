@@ -62,6 +62,6 @@ So we search for the item, add it to cart, the proceed to checkout.
 It is at this point that the system reminds us that we have to register 
 or sign in before we can make a purchase on the site.
 
-This simple script designed with Selenium, Python and behave framework
+This simple script designed with Selenium, Python and Behave framework
 helps to capture that journey and verify that a user is redirected to 
 the sign in or sign up page when the user gets to the point of checkout.
