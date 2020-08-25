@@ -30,10 +30,8 @@ jobs:
       - restore_cache:
           key: deps2-{{ .Branch }}-{{ checksum "requirements.txt" }}
       - run:
-          name: Install Python deps in a venv
+          name: Install Python
           command: |
-#            python3 -m venv venv
-#            . venv/bin/activate
             sudo pip install -r requirements.txt
 
       - save_cache:
@@ -45,12 +43,12 @@ jobs:
           paths:
             - "venv"
 
-#      - checkout
-#
-#      - run:
-#          name: Install requests
-#          command: |
-#            sudo pip install -r requirements.txt
+      - checkout
+
+      - run:
+          name: Install requests
+          command: |
+            sudo pip install -r requirements.txt
 
 
       - run:
