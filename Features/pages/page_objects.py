@@ -4,6 +4,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from webconf import Driver
 from Features.helper import values
 
+
 class ShopLifeCycle:
 
     def __init__(self):
@@ -18,7 +19,7 @@ class ShopLifeCycle:
 
     def pick_item(self):
         WebDriverWait(self.browser.driver, 60).\
-            until(EC.element_to_be_clickable((By.CSS_SELECTOR, values.item_link)))
+            until(EC.visibility_of_element_located((By.CSS_SELECTOR, values.item_link)))
         self.browser.driver.find_element_by_css_selector(values.item_link).click()
 
     def add_to_cart(self):
