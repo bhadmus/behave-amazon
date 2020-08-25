@@ -18,7 +18,7 @@ class Driver:
         elif browser_type.lower() == 'firefox':
 
             cap = DesiredCapabilities().FIREFOX
-            cap["marionette"] = True
+            cap["marionette"] = False
             firefox_options = FOptions()
             firefox_options.add_argument("--headless")
             self.driver = webdriver.Firefox(capabilities=cap, options=firefox_options)
