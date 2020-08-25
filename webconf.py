@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options as FOptions
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from Features.helper import values
 
 
@@ -16,9 +17,11 @@ class Driver:
 
         elif browser_type.lower() == 'firefox':
 
+            cap = DesiredCapabilities().FIREFOX
+            cap["marionette"] = True
             firefox_options = FOptions()
             firefox_options.add_argument("--headless")
-            self.driver = webdriver.Firefox(options=firefox_options)
+            self.driver = webdriver.Firefox(capabilities=cap, options=firefox_options)
             # self.driver = webdriver.Firefox()
 
 
