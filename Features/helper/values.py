@@ -20,7 +20,7 @@ search_btn = "nav-input"
 # The selector elements used when selecting item and trying to verify some elements before adding to cart
 #-----------------------------------------------------------------------------------------------------------#
 
-item_link = "img[alt='Hindemith: Cardillac']"
+item_link = "div.sg-col-20-of-24:nth-child(3) > div:nth-child(1) > span:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > h2:nth-child(1) > a:nth-child(1) > span:nth-child(1)"
 ratings = "ratings"
 reviews = "averageCustomerReviews"
 cart_btn = "add-to-cart-button-ubb"

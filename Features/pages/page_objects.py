@@ -7,8 +7,7 @@ from Features.helper import values
 class ShopLifeCycle:
 
     def __init__(self):
-        self.browser = Driver()
-
+        self.browser = Driver('firefox')
 
     def set_up(self):
         self.browser.nav_browser()
@@ -18,13 +17,18 @@ class ShopLifeCycle:
         self.browser.driver.find_element_by_class_name(values.search_btn).click()
 
     def pick_item(self):
+        WebDriverWait(self.browser.driver, 60).\
+            until(EC.element_to_be_clickable((By.CSS_SELECTOR, values.item_link)))
         self.browser.driver.find_element_by_css_selector(values.item_link).click()
 
     def add_to_cart(self):
+        WebDriverWait(self.browser.driver, 60). \
+            until(EC.visibility_of_element_located((By.ID, values.cart_btn)))
         self.browser.driver.find_element_by_id(values.cart_btn).click()
 
     def checkout(self):
-        self.browser.driver.implicitly_wait(10)
+        WebDriverWait(self.browser.driver, 60). \
+            until(EC.visibility_of_element_located((By.ID, values.checkout_btn)))
         self.browser.driver.find_element_by_id(values.checkout_btn).click()
 
     def validate_page_redirect(self):
@@ -41,7 +45,7 @@ class ShopLifeCycle:
         The wait time was extended at a time that a very poor internet connection was experienced
         :return: It is an assertion to check the presence of a text on the page loaded.
         """
-        WebDriverWait(self.browser.driver, 30).until(EC.visibility_of_element_located((By.ID, values.reviews)))
+        WebDriverWait(self.browser.driver, 60).until(EC.visibility_of_element_located((By.ID, values.reviews)))
         reviews = self.browser.driver.find_element_by_id(values.reviews)
         try:
             assert values.ratings in reviews.text

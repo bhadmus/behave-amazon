@@ -4,7 +4,7 @@ jobs:
   build:
     docker:
       - image: circleci/python:3.6.2-stretch-browsers
-#      - image: selenium/standalone-chrome:3.141
+
 
     steps:
       - checkout
@@ -13,7 +13,7 @@ jobs:
           name: Install requests
           command: |
             sudo pip install -r requirements.txt
-#            sudo pip install chromedriver
+
 
       - run:
           name: Run Selenium test
