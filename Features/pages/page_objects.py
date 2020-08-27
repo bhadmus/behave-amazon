@@ -8,7 +8,7 @@ from Features.helper import values
 class ShopLifeCycle:
 
     def __init__(self):
-        self.browser = Driver('firefox')
+        self.browser = Driver()
 
     def set_up(self):
         self.browser.nav_browser()
